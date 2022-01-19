@@ -9,8 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Pleased to meet you!")
-            .padding()
+        VStack{
+            Circle()
+                .fill(Color.blue)
+                .frame(minWidth: 50, idealWidth: 75, maxWidth: 200, minHeight: 75, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            Form{
+                Section{
+                    Button("Feed") {}
+                        .padding()
+                        .border(Color.blue, width: 1)
+                        .cornerRadius(10)
+                    Button("Feed") {}
+                        .padding()
+                        .border(Color.blue, width: 1)
+                        .cornerRadius(10)
+                }
+                Section{
+                    Button("Feed") {}
+                        .padding()
+                        .border(Color.blue, width: 1)
+                        .cornerRadius(10)
+                    Button("Feed") {}
+                        .padding()
+                        .border(Color.blue, width: 1)
+                        .cornerRadius(10)
+                }
+                
+                
+                
+            }
+        }
     }
 }
 
